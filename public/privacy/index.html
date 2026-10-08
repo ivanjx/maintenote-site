@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MainteNote's privacy policy: local maintenance records, optional permissions, software updates, and support communications.">
+  <meta name="description" content="How MainteNote handles local records, optional iCloud sync, App Store purchases, permissions, and data deletion.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Privacy Policy — MainteNote</title>
   <link rel="icon" href="../maintenote-mark.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0d1726" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191a18" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -21,20 +21,31 @@
   </header>
   <main id="main" class="container">
     <article class="prose">
-      <p class="eyebrow">MainteNote privacy</p>
-      <h1>Your records.<br>Your iPhone.</h1>
-      <p class="lead">Privacy policy</p>
-      <p class="meta">Last updated: <time datetime="2026-09-09">September 9, 2026</time></p>
+      <h1>Privacy policy</h1>
+      <p class="meta">Last updated: <time datetime="2026-10-08">October 8, 2026</time></p>
       <p>We develop MainteNote. This policy explains how information is handled in the MainteNote iPhone app, on this website, and when you contact support.</p>
-      <div class="notice"><p>No account is required. Maintenance records are stored locally on your iPhone. Software updates, website visits, and emails involve the service providers described below.</p></div>
+      <p>No MainteNote account is required. Your records are stored locally on your iPhone. If you enable iCloud sync, the app also sends the data described below to your private iCloud database. Purchases are handled by Apple.</p>
       <section aria-labelledby="records">
-        <h2 id="records">1. Information you enter in the app</h2>
+        <h2 id="records">Information you enter in the app</h2>
         <p>MainteNote stores the information you choose to enter, including item names, models, serial numbers, locations, maintenance schedules, usage readings, service dates, notes, costs, service providers, photos, and app preferences.</p>
-        <p>This information is used to display your things, calculate maintenance schedules, provide reminders, and keep service history. Records are saved in a local database and attached photos are copied into the app's storage. MainteNote does not upload these records or photos to us or provide its own cloud synchronization service.</p>
+        <p>This information is used to display your things, calculate maintenance schedules, provide reminders, and keep service history. Records are saved in a local database and attached photos are copied into the app's storage. We do not operate a server that receives your maintenance records or photos.</p>
         <p>The location field is text you enter, such as a room or garage. MainteNote does not use it to obtain your device's GPS location. Usage readings are also entered by you, not collected by background sensors.</p>
       </section>
+      <section aria-labelledby="icloud">
+        <h2 id="icloud">Optional iCloud sync</h2>
+        <p>You can enable sync during setup or in Settings → Data → iCloud sync. It uses Apple's CloudKit service and requires an Apple Account signed in to iCloud. You can leave it off and continue using the maintenance notebook offline.</p>
+        <p>When enabled, the app syncs things and their details, maintenance schedules and types, usage counters and readings, service history, attached photos, and your currency preference. Record identifiers, change and deletion metadata, and photo identifiers and checksums are used to keep copies consistent. Notification preferences and purchase ownership are not part of this maintenance-data sync.</p>
+        <p>The data is stored in your private iCloud database, not a public feed or a MainteNote account. Sync runs while the app is open and needs an internet connection. Local changes can be saved offline and synced later. Previously synced records can be downloaded on another iPhone or after reinstalling when you enable sync with the same iCloud account.</p>
+        <p>Apple handles iCloud information under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. Sync is not a separate historical backup: changes and individual record deletions also sync. See <a href="#retention">Retention and deletion</a> for the difference between resetting this iPhone and deleting iCloud data.</p>
+      </section>
+      <section aria-labelledby="purchases">
+        <h2 id="purchases">App Store purchases</h2>
+        <p>MainteNote Pro is a one-time, non-consumable purchase. Apple processes payment and purchase restoration through the App Store and StoreKit. The app does not receive your payment card details.</p>
+        <p>The app uses StoreKit transaction and verification information to determine whether you own Pro. It stores a device-local cache of your Pro status, the verification time, and a transaction identifier so access can be retained offline. This cache is not uploaded through MainteNote's iCloud sync. Apple can update ownership status, for example after a refund or revocation.</p>
+        <p>Purchase records held by Apple are separate from your maintenance records. Resetting or deleting MainteNote does not cancel the purchase or delete Apple's transaction history. You can restore an eligible purchase using the Apple Account that bought it.</p>
+      </section>
       <section aria-labelledby="permissions">
-        <h2 id="permissions">2. Optional permissions</h2>
+        <h2 id="permissions">Optional permissions</h2>
         <ul>
           <li><strong>Camera and photos:</strong> used when you choose to take or select a photo for a thing or maintenance record. Adding photos is optional.</li>
           <li><strong>Notifications:</strong> used to schedule local maintenance reminders on your iPhone. Reminder text may appear on your lock screen according to your iOS notification settings.</li>
@@ -42,38 +53,43 @@
         <p>You can change these permissions in your iPhone's Settings. Denying them does not prevent you from keeping maintenance records; the corresponding photo or notification feature will be unavailable.</p>
       </section>
       <section aria-labelledby="updates">
-        <h2 id="updates">3. Software updates and technical information</h2>
+        <h2 id="updates">Software updates and technical information</h2>
         <p>The app uses Expo's update service to check for and download compatible software updates. These requests can transmit technical information to Expo, including your IP address, platform, app runtime version, update identifiers, an installation identifier, and update-related error information. This supports update delivery and error recovery; it is separate from your maintenance database and photos.</p>
         <p>Expo handles information received by its services under its <a href="https://expo.dev/privacy">privacy policy</a>. Apple handles App Store downloads and any device diagnostics or backups you enable under its <a href="https://www.apple.com/legal/privacy/">privacy policy</a>.</p>
         <p>MainteNote does not include advertising or behavioral analytics, and we do not sell your maintenance information or use it for cross-app advertising tracking.</p>
       </section>
       <section aria-labelledby="support">
-        <h2 id="support">4. When you contact support</h2>
+        <h2 id="support">When you contact support</h2>
         <p>If you <a href="mailto:ivanjuan222@gmail.com?subject=MainteNote%20privacy">email us</a>, we receive your email address and the message, attachments, and other information you choose to send. We use this information to respond, investigate problems, and handle your request.</p>
         <p>Support email is handled through Gmail and your email provider. Google's handling of its services is described in its <a href="https://policies.google.com/privacy">privacy policy</a>. Avoid sending sensitive information or unredacted maintenance records unless needed for your request.</p>
         <p>Support correspondence is retained only as needed to handle the request, follow up on related issues, and meet legal obligations. You can ask for deletion of your correspondence using the same email address, subject to any legally required retention.</p>
       </section>
       <section aria-labelledby="website">
-        <h2 id="website">5. This website</h2>
+        <h2 id="website">This website</h2>
         <p>This static website is hosted on GitHub Pages. It has no analytics scripts, advertising, contact forms, or site-set cookies. Visiting it still sends ordinary web-request information, such as your IP address, to GitHub. GitHub may process this information to operate and secure its hosting service under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
         <p>Opening an external link or sending an email uses the relevant provider's services and privacy practices.</p>
       </section>
       <section aria-labelledby="retention">
-        <h2 id="retention">6. Retention, deletion, and your choices</h2>
-        <p>Local app records remain on your device until you remove them or the app's data is deleted. You can delete individual records or use Settings → Reset all data to clear the app's local records and app-managed photos. Deleting the app through iOS also removes its local app data; offloading an app is different and can retain its documents and data.</p>
-        <p>Deleting an attachment in MainteNote does not delete the original from your Photos library. Device backups, previously shared copies, and support emails are separate copies with their own retention. Manage device backups through Apple's settings and contact us about support correspondence.</p>
-        <p>We cannot access or recover records that exist only on your iPhone. Depending on your location, you may have rights to access, correct, or delete personal information received through support, or to raise a concern with your local privacy authority. Contact us to make a request.</p>
+        <h2 id="retention">Retention and deletion</h2>
+        <p>Local records remain on your iPhone until you delete them or clear the app's data. You can delete individual things and history entries in the app. When sync is enabled, those deletions also sync to iCloud and other connected iPhones; sync metadata may remain to keep a deleted record from returning.</p>
+        <ul>
+          <li><strong>Reset this iPhone:</strong> Settings → Data → Reset data clears local records and app-managed photos and turns off sync. Unsynced changes are lost. Existing iCloud data is kept and can be downloaded again if you re-enable sync.</li>
+          <li><strong>Delete iCloud data:</strong> while iCloud sync is enabled, turn it off in Settings → Data and confirm Delete &amp; Turn Off. This deletes MainteNote's iCloud data and disables sync, but keeps the records on this iPhone. Other iPhones keep their local copies and stop syncing when they detect the cloud deletion. This requires internet access and the iCloud account previously used by MainteNote.</li>
+          <li><strong>Remove both copies:</strong> delete iCloud data first, wait for the app to confirm sync is off, then reset local data on each iPhone where you want to remove it. Do not re-enable sync unless you want the remaining local records uploaded again.</li>
+        </ul>
+        <p>Deleting the app through iOS removes its local data, not its iCloud data. Offloading an app can retain its documents and data. Deleting an attachment in MainteNote does not delete the original from your Photos library. Device backups, copies you have shared, Apple's purchase history, and support emails are separate. Manage device backups through Apple's settings and contact us about support correspondence.</p>
+        <p>We cannot recover records that exist only on your iPhone. Depending on your location, you may have rights to access, correct, or delete personal information received through support, or to raise a concern with your local privacy authority. Contact us to make a request.</p>
       </section>
       <section aria-labelledby="security">
-        <h2 id="security">7. Security</h2>
-        <p>Local records rely on iOS app storage protections and your device security. Use a device passcode and keep iOS up to date. No storage or transmission method can be guaranteed completely secure.</p>
+        <h2 id="security">Security</h2>
+        <p>Local records rely on iOS app storage protections and your device security. Optional sync uses Apple's CloudKit service. Use a device passcode, protect your Apple Account, and keep iOS up to date. No storage or transmission method can be guaranteed completely secure.</p>
       </section>
       <section aria-labelledby="changes">
-        <h2 id="changes">8. Changes to this policy</h2>
+        <h2 id="changes">Changes to this policy</h2>
         <p>This page will be updated if MainteNote's information-handling practices change. The date above identifies the latest revision.</p>
       </section>
       <section aria-labelledby="contact">
-        <h2 id="contact">9. Contact</h2>
+        <h2 id="contact">Contact</h2>
         <p>For privacy questions or requests, <a href="mailto:ivanjuan222@gmail.com?subject=MainteNote%20privacy">email us</a>. For app help, visit the <a href="../support/">support page</a>.</p>
       </section>
     </article>
